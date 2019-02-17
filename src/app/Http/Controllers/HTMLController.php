@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use TCPDF;
 
-class HomeController extends Controller
+class HTMLController extends Controller
 {
     public function index()
     {
