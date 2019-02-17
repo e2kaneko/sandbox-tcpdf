@@ -12,7 +12,7 @@ class BladeController extends Controller
 
         $tcpdf->AddPage();
         $tcpdf->SetFont("ipaexm", "", 10);
-        $html = view('template-page1')->render();
+        $html = view('template-page1')->with('company_name', '株式会社サンプル')->render();
         $tcpdf->writeHTML($html);
 
         $tcpdf->AddPage();
