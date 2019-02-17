@@ -12,12 +12,12 @@ class HTMLController extends Controller
 
         $tcpdf->AddPage();
         $tcpdf->SetFont("ipaexm", "", 10);
-        $html = file_get_contents(public_path() . '/html/template-page1.html');
+        $html = file_get_contents(resource_path() . '/html/template-page1.html');
         $tcpdf->writeHTML($html);
 
         $tcpdf->AddPage();
         $tcpdf->SetFont("ipaexm", "", 10);
-        $html = file_get_contents(public_path() . '/html/template-page2.html');
+        $html = file_get_contents(resource_path() . '/html/template-page2.html');
         $tcpdf->writeHTML($html);
 
         $tcpdf->Output("output.pdf");
